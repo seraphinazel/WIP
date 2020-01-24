@@ -25,6 +25,7 @@ header {
 .container {
 	width: 100%;
 	min-width: 700px;
+	max-width: 1920px;
 	margin: auto;
 }
 
@@ -39,10 +40,10 @@ h5,
 h6,
 p,
 a {
-	margin: 0;
 	color: #fff;
 	font-family: Georgia, serif;
 	font-weight: 100;
+	margin: 0;
 }
 
 h1 {
@@ -50,7 +51,7 @@ h1 {
 }
 
 header p {
-	font-size: 15px;
+	font-size: 12px;
 }
 
 a {
@@ -93,16 +94,19 @@ nav {
 }
 
 .slider h2 {
-	font-size: 50px;
+	font-size: 46px;
 	margin-bottom: 30px;
 }
 
 .slider p {
 	margin-bottom: 40px;
+	letter-spacing: 0.2px;
+	padding-right: 85px;
+	line-height: 20px;
 }
 
 .slider a {
-	font-size: 18px;
+	font-size: 13px;
 	padding: 15px 20px;
 	background-color: #76c38f;
 	border-radius: 10px;
@@ -114,15 +118,11 @@ nav {
 }
 
 .imageSlider {
-	width: 100%;
-	height: 100%;
-	min-height: 400px;
-	min-width: 400px;
-	box-sizing: border-box;
-	background-image: url(../images/slider.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
+	width: 380px;
+	height: 380px;
+	background-color: #333;
+	border: 20px solid #6b6b6b;
+	border-radius: 50%;
 }
 
 .imageSlider:hover {
@@ -145,7 +145,7 @@ nav {
 }
 
 .services h3 {
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: 100;
 	text-transform: uppercase;
 	text-align: center;
@@ -195,7 +195,7 @@ nav {
 	margin: auto;
 	margin-bottom: 20px;
 	text-transform: uppercase;
-	font-size: 40px;
+	font-size: 32px;
 	font-weight: 100;
 	color: white;
 	text-align: center;
@@ -220,6 +220,7 @@ nav {
 	padding: 5px 0;
 	position: relative;
 	top: 161px;
+	font-size: 14px;
 }
 
 .latestWorksWrap {
@@ -267,12 +268,12 @@ nav {
 }
 
 .staff h3 {
-	font-size: 20px;
+	font-size: 16px;
 	margin-bottom: 30px;
 }
 
 .staff h4 {
-	font-size: 18px;
+	font-size: 13px;
 	color: #76c38f;
 	font-weight: 500;
 	margin-bottom: 10px;
@@ -284,16 +285,17 @@ nav {
 }
 
 .staff h6 {
-	font-size: 12px;
+	font-size: 13px;
 	color: #666;
 	margin-bottom: 10px;
 }
 
 .staff p {
-	font-size: 18px;
+	font-size: 13px;
 	color: #979797;
-	line-height: 30px;
+	line-height: 20px;
 	margin-bottom: 10px;
+	letter-spacing: 0.2px;
 }
 
 .staff a {
@@ -306,7 +308,7 @@ nav {
 }
 
 .staff li {
-	font-size: 18px;
+	font-size: 13px;
 	list-style-image: url(../images/arrow.png);
 	border-bottom: 1px solid #404040;
 }
@@ -321,7 +323,7 @@ nav {
 	margin: 10px 0;
 	background-color: #222;
 	color: #979797;
-	font-size: 18px;
+	font-size: 13px;
 	font-family: Georgia, serif;
 	resize: none;
 }
