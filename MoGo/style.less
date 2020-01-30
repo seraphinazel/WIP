@@ -1,0 +1,39 @@
+@gradient: linear-gradient(180deg, rgba(243,129,129,0.9) 0%, rgba(252,227,138,0.9) 100%);
+@white: #fff;
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 1920px;
+	margin: 0 auto;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.header {
+	height: 1000px;
+	background: url(img/banner.jpg) center center no-repeat;
+	.gradient {
+		padding: 25px 360px;
+		height: 1000px;
+		background: @gradient;
+		.logo {
+			font-size: 30px;
+			font-weight: 500;
+			float: left;
+			color: @white;
+		}
+		li.menu {
+			list-style-type: none;
+			display: inline;
+		}
+	}
+}
