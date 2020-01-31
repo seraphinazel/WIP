@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
 
@@ -6,6 +6,7 @@
 @light_color: #fff;
 @red_color: #f38181;
 @yellow_color: #fce38a;
+@cyan_color: #95e1d3;
 
 body,
 html {
@@ -164,4 +165,99 @@ span {
 
 .nav_block:hover .nav_text {
 	opacity: 1.0;
+}
+
+.about_gallery {
+	margin: 100px 360px;
+}
+
+.about_gallery_block {
+	height: 250px;
+	display: inline-block;
+	margin-right: 30px;
+	margin-left: -4px;
+	position: relative;
+	cursor: pointer;
+}
+
+.about_gradient {
+	height: 250px;
+	width: 380px;
+	background: @gradient;
+	display: none;
+	position: absolute;
+	bottom: 0;
+	img {
+		margin: 100px 174px 0;
+	}
+	p {
+		text-transform: uppercase;
+		font-size: 18px;
+		line-height: 18px;
+		color: @light_color;
+		text-align: center;
+		margin-top: 5px;
+		font-weight: 700;
+	}
+}
+
+.about_gallery_block:last-child {
+	margin-right: 0;
+}
+
+.about_gallery_block:hover .about_gradient {
+	display: block;
+}
+
+.about_gallery_block:hover {
+	-moz-transform: translateX(-10px) translateY(-10px);
+	-webkit-transform: translateX(-10px) translateY(-10px);
+	-o-transform: translateX(-10px) translateY(-10px);
+	-ms-transform: translateX(-10px) translateY(-10px);
+	transform: translateX(-10px) translateY(-10px);
+	-webkit-box-shadow: 10px 10px 0 0 @cyan_color;
+	box-shadow: 10px 10px 0 0 @cyan_color;
+	transition: 0.3s;
+}
+
+h4 {
+	font-size: 24px;
+	line-height: 24px;
+	text-align: center;
+	font-weight: 500;
+	margin-top: 100px;
+	margin-bottom: 25px;
+}
+
+h3 {
+	font-size: 30px;
+	line-height: 30px;
+	margin-top: 25px;
+	margin-bottom: 40px;
+	text-transform: uppercase;
+	text-align: center;
+	font-weight: 800;
+}
+
+.dark_title {
+	color: #333;
+}
+
+.red_line {
+	width: 60px;
+	height: 3px;
+	background-color: @red_color;
+	margin: 0 auto;
+}
+
+.regular_text {
+	font-family: 'Roboto', sans-serif;
+	font-size: 15px;
+	text-align: center;
+	color: #999;
+	line-height: 24px;
+}
+
+.about .regular_text {
+	margin: 45px 480px;
 }
