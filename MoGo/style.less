@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+
 @gradient: linear-gradient(180deg, rgba(243,129,129,0.9) 0%, rgba(252,227,138,0.9) 100%);
-@white: #fff;
+@light_color: #fff;
 
 body,
 html {
@@ -18,22 +22,91 @@ html {
 	clear: both;
 }
 
-.header {
+a {
+	text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+div,
+span {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.curly_text {
+	font-family: 'Kaushan Script', cursive;
+}
+
+.banner {
 	height: 1000px;
 	background: url(img/banner.jpg) center center no-repeat;
 	.gradient {
 		padding: 25px 360px;
-		height: 1000px;
+		height: 950px;
 		background: @gradient;
+		color: @light_color;
 		.logo {
 			font-size: 30px;
-			font-weight: 500;
+			font-weight: bold;
 			float: left;
-			color: @white;
 		}
 		li.menu {
 			list-style-type: none;
 			display: inline;
+		}
+		div.menu {
+			float: right;
+		}
+		.menu a,
+		a.more {
+			color: @light_color;
+			font-size: 14px;
+			text-transform: uppercase;
+			margin: 0 25px 5px 25px;
+		}
+		.menu input {
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+			background: url(img/icons/search.png) center center no-repeat;
+			width: 25px;
+			height: 25px;
+		    margin-bottom: -7px;
+		    margin-left: 12px;
+		}
+		.title {
+			text-align: center;
+			clear: both;
+			margin-top: 165px;
+		}
+		.title h2 {
+			text-transform: capitalize;
+			font-size: 72px;
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+		.title h1 {
+			text-transform: uppercase;
+			font-size: 150px;
+			margin-top: 20px;
+			margin-bottom: 60px;
+			line-height: 150px;
+		}
+		.line {
+			width: 60px;
+			height: 3px;
+			background-color: @light_color;
+			margin: 0 auto 60px;
+		}
+		a.more {
+			padding: 10px 30px;
+			border: 3px solid @light_color;
 		}
 	}
 }
