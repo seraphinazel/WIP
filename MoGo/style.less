@@ -167,12 +167,12 @@ span {
 	opacity: 1.0;
 }
 
-.about_gallery {
+.about_gallery,
+.team_gallery {
 	margin: 100px 360px;
 }
 
-.about_gallery_block {
-	height: 250px;
+.gallery_block {
 	display: inline-block;
 	margin-right: 30px;
 	margin-left: -4px;
@@ -180,13 +180,26 @@ span {
 	cursor: pointer;
 }
 
-.about_gradient {
+.about_gallery_block {
 	height: 250px;
-	width: 380px;
+	.gallery_block;
+}
+
+.team_gallery_block {
+	.gallery_block;
+}
+
+.gradient_block {
+	height: 100%;
+	width: 100%;
 	background: @gradient;
 	display: none;
 	position: absolute;
 	bottom: 0;
+}
+
+.about_gradient {
+	.gradient_block;
 	img {
 		margin: 100px 174px 0;
 	}
@@ -201,15 +214,21 @@ span {
 	}
 }
 
-.about_gallery_block:last-child {
+.team_gradient {
+	.gradient_block;
+}
+
+.about_gallery_block:last-child,
+.team_gallery_block:last-child {
 	margin-right: 0;
 }
 
-.about_gallery_block:hover .about_gradient {
+.about_gallery_block:hover .about_gradient,
+.team_gallery_block:hover .team_gradient {
 	display: block;
 }
 
-.about_gallery_block:hover {
+.gallery_hover {
 	-moz-transform: translateX(-10px) translateY(-10px);
 	-webkit-transform: translateX(-10px) translateY(-10px);
 	-o-transform: translateX(-10px) translateY(-10px);
@@ -218,6 +237,11 @@ span {
 	-webkit-box-shadow: 10px 10px 0 0 @cyan_color;
 	box-shadow: 10px 10px 0 0 @cyan_color;
 	transition: 0.3s;
+}
+
+.about_gallery_block:hover,
+.team_gallery_block:hover {
+	.gallery_hover;
 }
 
 h4 {
@@ -258,6 +282,7 @@ h3 {
 	line-height: 24px;
 }
 
-.about .regular_text {
+.about .regular_text,
+.team .regular_text {
 	margin: 45px 480px;
 }
