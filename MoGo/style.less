@@ -4,6 +4,7 @@
 
 @gradient: linear-gradient(180deg, rgba(243,129,129,0.9) 0%, rgba(252,227,138,0.9) 100%);
 @light_color: #fff;
+@dark_color: #333;
 @red_color: #f38181;
 @yellow_color: #fce38a;
 @cyan_color: #95e1d3;
@@ -185,7 +186,7 @@ span {
 	.gallery_block;
 }
 
-.team_gallery_block {
+.team_block {
 	.gallery_block;
 }
 
@@ -218,8 +219,37 @@ span {
 	.gradient_block;
 }
 
+.team_socials {
+	width: 225px;
+	margin: 205px auto;
+}
+
+.soc_block {
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	float: left;
+	background-color: @yellow_color;
+	font-size: 27px;
+    line-height: 55px;
+    outline: 1px solid #f9bd87;
+}
+
+.soc_block a {
+	color: @red_color;
+}
+
+.soc_block:hover {
+	background-color: @red_color;
+	outline: none;
+}
+
+.soc_block:hover a {
+	color: @light_color;
+}
+
 .about_gallery_block:last-child,
-.team_gallery_block:last-child {
+.team_block:last-child {
 	margin-right: 0;
 }
 
@@ -244,6 +274,28 @@ span {
 	.gallery_hover;
 }
 
+.team_name {
+	text-transform: uppercase;
+	font-size: 14px;
+	text-align: center;
+	color: @dark_color;
+	font-weight: 700;
+	line-height: 14px;
+	margin-top: 30px;
+}
+
+.team_spec {
+	font-family: 'Roboto', sans-serif;
+	font-style: italic;
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 15px;
+	margin-top: 10px;
+	text-align: center;
+	color: #a6a6a6;
+
+}
+
 h4 {
 	font-size: 24px;
 	line-height: 24px;
@@ -264,7 +316,7 @@ h3 {
 }
 
 .dark_title {
-	color: #333;
+	color: @dark_color;
 }
 
 .red_line {
